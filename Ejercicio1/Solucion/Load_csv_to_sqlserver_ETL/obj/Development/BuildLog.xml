@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Load_csv_to_sqlserver_ETL</Name>
-    <LastWriteTime>2021-03-11T06:31:23.0138944Z</LastWriteTime>
+    <LastWriteTime>2021-03-11T23:22:10.3053068Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Package.dtsx</Name>
-      <LastWriteTime>2021-03-11T07:22:44.2723412Z</LastWriteTime>
+      <LastWriteTime>2021-03-12T00:09:36.4303182Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

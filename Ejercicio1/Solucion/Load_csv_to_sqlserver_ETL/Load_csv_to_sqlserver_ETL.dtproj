@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-LD3OAU2</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6Zre0Sy6IUqAJ2p9raEqwwAAAAACAAAAAAAQZgAAAAEAACAAAAB8JvSKpZoc7Uz4vnX1urrwRnth5RkDc9/3k36hbb0VlwAAAAAOgAAAAAIAACAAAAAe5n4y1lW97Tcn/4t56Bd7wcI0YEtivJR4rJvLAn0++pAAAACi6B84OAVFYdATuPvKwRX9PfflU6L4Gsil5TjoGaq6MvjCpyH95MlVIqNHliuTYymdXDCYF4EZeaifje7DfypJ/Vh664syCF/AXkO+R+tLhFZO2k/7bSyti0S9+d1II9AiGduAYo8ClnUwjlHtHsBRthJWWUxirmLpRTyX9JjevAtbpZUzUVpDEAZHX2nCIbhAAAAA8vdFDG9kSEi2KPJOMQ9lnpNkAJt66H0LMkjnRBGkshGH9aVIP90sX2lg2Hz1sYVGsPRKhExbTZZbKGCJElatWg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6Zre0Sy6IUqAJ2p9raEqwwAAAAACAAAAAAAQZgAAAAEAACAAAADa1yiZUyBj7Dz5cb2zbKyANHnmGEvlrpQHGeygZnKKbwAAAAAOgAAAAAIAACAAAAAAEKH1r+M0YVF+dU8fGdzXMAQjHdKH2Gqj0GhWWnbl85AAAADshNZhFFOuDPja4oY1atusRHwcWL6lsZwivmYzYhi5XL/C+ZylEDxH4fxN2yaAb2vYo/IN9jWEfgMsfU6ioinMjrllLlUS6SVYinqPhLr8dLWN1Go4nvYoNOOWB9Hydvjxe0CxuKGbcHSUByWZWuSlwn9jdL0JN9m3FIbPRUsj5bur4yPYWgshWQzCUkgdTZ5AAAAA6RmbTCpKIbjiRwLdSsDQsgsCnePmmPgx58N6K7KE8zSAnHRVz6mbRbyIyg82L3ieoE/juEm5GJVEbmV5WeRV1Q==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,10 +42,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">7</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">29</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{73C842FA-3917-4D03-BDDC-2BB9E3418C92}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{CE9C9150-1B95-45EB-97F7-073B1EEF3CF1}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -171,7 +171,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Source Files.AlwaysCheckForRowDelimiters">
+                <SSIS:Parameter SSIS:Name="CM.Source CSV.AlwaysCheckForRowDelimiters">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -186,7 +186,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Source Files.CodePage">
+                <SSIS:Parameter SSIS:Name="CM.Source CSV.CodePage">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -201,7 +201,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Source Files.ColumnNamesInFirstDataRow">
+                <SSIS:Parameter SSIS:Name="CM.Source CSV.ColumnNamesInFirstDataRow">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -216,7 +216,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Source Files.ConnectByProxy">
+                <SSIS:Parameter SSIS:Name="CM.Source CSV.ConnectByProxy">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -231,7 +231,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Source Files.DataRowsToSkip">
+                <SSIS:Parameter SSIS:Name="CM.Source CSV.DataRowsToSkip">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -246,7 +246,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Source Files.Format">
+                <SSIS:Parameter SSIS:Name="CM.Source CSV.Format">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -261,7 +261,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Source Files.HeaderRowDelimiter">
+                <SSIS:Parameter SSIS:Name="CM.Source CSV.HeaderRowDelimiter">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -276,7 +276,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Source Files.HeaderRowsToSkip">
+                <SSIS:Parameter SSIS:Name="CM.Source CSV.HeaderRowsToSkip">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -291,7 +291,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Source Files.LocaleID">
+                <SSIS:Parameter SSIS:Name="CM.Source CSV.LocaleID">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -306,7 +306,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Source Files.RowDelimiter">
+                <SSIS:Parameter SSIS:Name="CM.Source CSV.RowDelimiter">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -322,7 +322,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Source Files.TextQualifier">
+                <SSIS:Parameter SSIS:Name="CM.Source CSV.TextQualifier">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -337,7 +337,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Source Files.Unicode">
+                <SSIS:Parameter SSIS:Name="CM.Source CSV.Unicode">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>

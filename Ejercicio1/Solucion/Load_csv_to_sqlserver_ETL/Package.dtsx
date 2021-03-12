@@ -11,15 +11,15 @@
   DTS:LocaleID="17418"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="22"
-  DTS:VersionGUID="{1F6962E9-C181-476C-AEB2-9099DF3EFDA0}">
+  DTS:VersionBuild="39"
+  DTS:VersionGUID="{AA5952C1-7FD2-4F98-8C02-2C9D44350B51}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-LD3OAU2.db_diego_spa.sa]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{1CB21FAF-E2A7-492B-94E1-0ABEEC1EA915}"
+      DTS:DTSID="{974CCFEE-FAD4-4CD6-9D4C-5538B4FEB001}"
       DTS:ObjectName="DESKTOP-LD3OAU2.db_diego_spa.sa">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -27,17 +27,17 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6Zre0Sy6IUqAJ2p9raEqwwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAsLZ8lJr//LHGTx1pycphMxqRo33ZjHNUO4oqP221o/QAAAAAOgAAAAAIAACAAAAAjofTvMKgqqbrgmobUPA9ECVgu7prnNQpkCfUySdzr1RAAAADl+7LlVga4ogNoxl1HcJL3QAAAAIO9x6x7DlbzbSbWOGvmZRs+AeOeV2grdMo7zFS5Kqfhbj4yEGUYVrkgkk+ubml/1Mp5IFN/OaiyEUx6hdef7Bg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6Zre0Sy6IUqAJ2p9raEqwwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABCqNTupt3DWAL5F0uGY96YixA8zsSPRfMdXNypqcYTmgAAAAAOgAAAAAIAACAAAACXeurN8KhJK1If0tLt5IGJr/Y4fPzoQ1647OgY7XKVUhAAAACa1AF3l9idoWyLVj+yb8v3QAAAAKKIflnGhMtu8XDYgYi6L0T5tMuBboAR2+tQq/DG/raW4o1jI6IA/cbKjK1qAq+2XRGhhzCzQ/LxBG8YsTSlM7I</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Source Files]"
+      DTS:refId="Package.ConnectionManagers[Source CSV]"
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{EE0F9148-9D4E-4F79-A279-34DF1468958C}"
-      DTS:ObjectName="Source Files">
+      DTS:ObjectName="Source CSV">
       <DTS:PropertyExpression
-        DTS:Name="ConnectionString">@[User::sourcefiles]</DTS:PropertyExpression>
+        DTS:Name="ConnectionString">@[User::originName]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -55,7 +55,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="id"
-              DTS:DTSID="{F974A994-1BCC-4E81-9E3D-D350CB85533F}"
+              DTS:DTSID="{CDD33314-11D0-4071-BEFB-0D5DAEEB840F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -63,7 +63,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="Sexo"
-              DTS:DTSID="{29A108AC-605A-47CE-86F2-6C319F6B9390}"
+              DTS:DTSID="{08D75903-0F5F-43AF-8D65-9EFBCE79D51A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -71,7 +71,7 @@
               DTS:DataType="6"
               DTS:TextQualified="True"
               DTS:ObjectName="ingresos"
-              DTS:DTSID="{54FE9349-CFFA-4E1F-907E-7F2A5D4E03BC}"
+              DTS:DTSID="{7C5AAAEF-716B-4B8A-B766-AF4B9354490F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -79,7 +79,7 @@
               DTS:DataType="14"
               DTS:TextQualified="True"
               DTS:ObjectName="PromVisit"
-              DTS:DTSID="{AFBBDA0B-2D73-4AB3-8BBA-6E4F5FB8A4E3}"
+              DTS:DTSID="{F0956A9E-7824-4849-919D-74067E3D2033}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -87,7 +87,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="Edad"
-              DTS:DTSID="{5BEC7854-966E-438E-AF5B-4CF4F3B9B847}"
+              DTS:DTSID="{6D556635-CAC6-4259-9B78-BBB7DE4BD61E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -95,7 +95,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="Sauna"
-              DTS:DTSID="{090A69B8-7600-44EA-8974-2CC604C6FB6B}"
+              DTS:DTSID="{C0B81ADD-8A52-4F0D-A960-C717DD5048CA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -103,7 +103,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="Masaje"
-              DTS:DTSID="{D6E73948-C38A-45CB-8B6F-E96FE00CBD36}"
+              DTS:DTSID="{0879598A-B8A5-4132-8F93-6F07E0C64BAB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -111,7 +111,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="Hidro"
-              DTS:DTSID="{BE54F209-ED9B-4A1A-A31D-882EF33FDE43}"
+              DTS:DTSID="{380A3C73-144A-4D84-BEB6-97168EFEB255}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -119,7 +119,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="Yoga"
-              DTS:DTSID="{52F0AB1A-57A8-4CFF-8A6C-AC95CEFB0D39}"
+              DTS:DTSID="{F4B6FD39-1708-4A20-B6C6-86C9B9366A56}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -129,10 +129,10 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{9EAC4C65-9CBA-4808-9E41-5CB29B41335D}"
+      DTS:DTSID="{0EF517AD-AAAF-4834-9ABF-AB52AE0F2A0E}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
-      DTS:ObjectName="sourcefiles">
+      DTS:ObjectName="originName">
       <DTS:VariableValue
         DTS:DataType="8"
         xml:space="preserve"></DTS:VariableValue>
@@ -140,17 +140,17 @@
   </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Leer cada CSV"
+      DTS:refId="Package\Contenedor de bucles Foreach"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Contenedor de bucles Foreach"
-      DTS:DTSID="{45DDEEA6-94C9-41C8-B380-C5F65AC5AE4A}"
+      DTS:DTSID="{EDE6C48B-4A5F-4FCD-9347-58C76FBD24C6}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
-      DTS:LocaleID="1033"
-      DTS:ObjectName="Leer cada CSV">
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Contenedor de bucles Foreach">
       <DTS:ForEachEnumerator
         DTS:CreationName="Microsoft.ForEachFileEnumerator"
-        DTS:DTSID="{DD2C0ED5-0F80-44B9-A6C3-2BE3A15D5718}"
-        DTS:ObjectName="{DD2C0ED5-0F80-44B9-A6C3-2BE3A15D5718}">
+        DTS:DTSID="{4914F433-083D-4053-81FA-2A106BC478BC}"
+        DTS:ObjectName="{4914F433-083D-4053-81FA-2A106BC478BC}">
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
@@ -167,7 +167,7 @@
       <DTS:Variables />
       <DTS:Executables>
         <DTS:Executable
-          DTS:refId="Package\Leer cada CSV\CSV hacia SQL Server"
+          DTS:refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Tarea Flujo de datos"
           DTS:DTSID="{949839BB-AB80-480A-B25C-EDD4934AAC7C}"
@@ -181,11 +181,805 @@
               version="1">
               <components>
                 <component
-                  refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server"
+                  refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada"
+                  componentClassID="Microsoft.FuzzyLookup"
+                  contactInfo="Búsqueda aproximada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;5"
+                  description="Realiza tareas de limpieza de datos, como estandarizar datos, corregir datos y proporcionar valores que faltan. Usa la coincidencia aproximada para devolver una o varias coincidencias aproximadas de una tabla de referencia. Por ejemplo, se pueden buscar datos de cliente por dirección, incluso si los datos de entrada no coinciden exactamente con los datos de referencia."
+                  name="Búsqueda aproximada"
+                  version="5">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Indica si se debe reutilizar una tabla de índice de coincidencias aproximadas existente o crear una nueva. La nueva tabla de índice puede ser temporal, almacenarse, o almacenarse y mantenerse."
+                      name="MatchIndexOptions"
+                      typeConverter="tcMatchIndexOptions">1</property>
+                    <property
+                      dataType="System.Null"
+                      description="Especifica la cantidad máxima de memoria (en MB) que puede usar esta instancia de la transformación Búsqueda aproximada. Si se da el valor 0, la transformación ajustará dinámicamente su uso de la memoria en función de sus requisitos y de la memoria disponible del sistema."
+                      expressionType="Notify"
+                      name="MaxMemoryUsage" />
+                    <property
+                      dataType="System.Null"
+                      description="Especifica el nombre de la tabla de índice de coincidencias aproximadas que se va a reutilizar o el nombre de tabla en el que se escribirá una nueva de tabla de índice de coincidencias aproximadas."
+                      name="MatchIndexName"
+                      state="escaped" />
+                    <property
+                      dataType="System.String"
+                      description="Especifica el nombre de la tabla o vista de referencia con la que se compararán los registros entrantes."
+                      name="ReferenceTableName"
+                      state="escaped">_x005B_dbo_x005D_._x005B_sucursal_x005D_</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Indica si se debe quitar una tabla de índice de coincidencias aproximadas existente si la transformación está configurada para generar una tabla nueva y ya existe una tabla con el mismo nombre."
+                      name="DropExistingMatchIndex">1</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Establece si se debe realizar una copia de la tabla de referencia para la construcción del índice de coincidencias aproximadas y la comparación posterior. Se recomienda realizar siempre una copia; de lo contrario, podrían obtenerse resultados inesperados si se cambia el contenido de la tabla de referencia durante la ejecución del paquete (o entre ejecuciones si se reutiliza un índice de coincidencias aproximadas). Si se establece en False la propiedad, la tabla de referencia deberá tener además un índice clúster basado en una columna de identidad de entero."
+                      name="CopyReferenceTable">1</property>
+                    <property
+                      dataType="System.UInt32"
+                      description="Especifica el número máximo de coincidencias aproximadas que se debe devolver para un registro de entrada."
+                      name="MaxOutputMatchesPerInput">1</property>
+                    <property
+                      dataType="System.Single"
+                      description="Especifica la puntuación de similitud mínima necesaria para los resultados de coincidencia que devuelve la transformación."
+                      name="MinSimilarity">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica el conjunto de caracteres de espacio en blanco y puntuación usados para separar campos de coincidencia aproximada en las palabras utilizadas para la coincidencia y puntuación de una búsqueda aproximada."
+                      name="Delimiters"
+                      state="escaped">_x0020__x0009__x000D__x000A__x002C_._x003B_:-_x0022__x0027__x0026__x002F__x005C__x0040__x0021__x003F__x0028__x0029__x003C__x003E__x005B__x005D__x007B__x007D__x007C__x0023__x002A__x005E__x0025_</property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica los metadatos de la tabla de referencia en formato XML."
+                      name="ReferenceMetadataXml"
+                      state="escaped">_x003C_referenceMetadata_x003E__x003C_referenceColumns_x003E__x003C_referenceColumn_x0020_name_x003D__x0022_id_x0022__x0020_dataType_x003D__x0022_DT_I4_x0022__x0020_length_x003D__x0022_0_x0022__x0020_precision_x003D__x0022_0_x0022__x0020_scale_x003D__x0022_0_x0022__x0020_codePage_x003D__x0022_0_x0022__x002F__x003E__x003C_referenceColumn_x0020_name_x003D__x0022_nombre_x0022__x0020_dataType_x003D__x0022_DT_STR_x0022__x0020_length_x003D__x0022_100_x0022__x0020_precision_x003D__x0022_0_x0022__x0020_scale_x003D__x0022_0_x0022__x0020_codePage_x003D__x0022_1252_x0022__x002F__x003E__x003C_referenceColumn_x0020_name_x003D__x0022_nombre_archivo_x0022__x0020_dataType_x003D__x0022_DT_STR_x0022__x0020_length_x003D__x0022_100_x0022__x0020_precision_x003D__x0022_0_x0022__x0020_scale_x003D__x0022_0_x0022__x0020_codePage_x003D__x0022_1252_x0022__x002F__x003E__x003C__x002F_referenceColumns_x003E__x003C__x002F_referenceMetadata_x003E__x000D__x000A_</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Si es True, cada registro de entrada se comparará directamente con CADA registro de la tabla de referencia. Esto puede producir resultados ligeramente mejores, pero será muy lento a no ser que el número de registros de la tabla de referencia sea muy pequeño. Tenga en cuenta que si esta opción está habilitada se cargará toda la tabla de referencia en la memoria principal. Básicamente esta opción tiene fines depurativos y debe utilizarse con cuidado."
+                      name="Exhaustive">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Si es True, la búsqueda aproximada cargará parcialmente el índice de tolerancia de error y la tabla de referencia en la memoria principal antes de que empiece la ejecución. Esto puede mejorar considerablemente el rendimiento si se tienen que procesar muchas filas de entrada."
+                      name="WarmCaches">true</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[DESKTOP-LD3OAU2.db_diego_spa.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-LD3OAU2.db_diego_spa.sa]"
+                      description="Conexión y base de datos de Microsoft SQL Server en la que está ubicada la tabla de referencia de búsqueda aproximada y en la que se almacenará y se obtendrá acceso a la tabla de índice de coincidencias aproximadas."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Inputs[Entrada de búsqueda aproximada]"
+                      name="Entrada de búsqueda aproximada">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Inputs[Entrada de búsqueda aproximada].Columns[id]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="id"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[id]">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Nombre de la columna de tabla de referencia con la que debe coincidir la columna de entrada."
+                              name="JoinToReferenceColumn"
+                              state="escaped" />
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la coincidencia es aproximada o exacta."
+                              name="JoinType"
+                              typeConverter="tcJoinType">2</property>
+                            <property
+                              dataType="System.Single"
+                              description="Especifica la similitud textual mínima necesaria entre la entrada y los registros de coincidencia aproximada en los valores de esta columna de combinación en particular. Debe ser un valor de coma flotante entre 0,0 y 1,0."
+                              name="MinSimilarity">0</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Especifica las opciones de comparación para datos de caracteres. Las opciones son las admitidas por la función FoldString."
+                              name="FuzzyComparisonFlags"
+                              typeConverter="tcComparisonFlags">1</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Marcadores de FoldString que se deben usar para determinar si dos cadenas son equivalentes."
+                              name="FuzzyComparisonFlagsEx"
+                              typeConverter="tcComparisonFlagsEx">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Inputs[Entrada de búsqueda aproximada].Columns[Sexo]"
+                          cachedDataType="bool"
+                          cachedName="Sexo"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Sexo]">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Nombre de la columna de tabla de referencia con la que debe coincidir la columna de entrada."
+                              name="JoinToReferenceColumn"
+                              state="escaped" />
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la coincidencia es aproximada o exacta."
+                              name="JoinType"
+                              typeConverter="tcJoinType">2</property>
+                            <property
+                              dataType="System.Single"
+                              description="Especifica la similitud textual mínima necesaria entre la entrada y los registros de coincidencia aproximada en los valores de esta columna de combinación en particular. Debe ser un valor de coma flotante entre 0,0 y 1,0."
+                              name="MinSimilarity">0</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Especifica las opciones de comparación para datos de caracteres. Las opciones son las admitidas por la función FoldString."
+                              name="FuzzyComparisonFlags"
+                              typeConverter="tcComparisonFlags">1</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Marcadores de FoldString que se deben usar para determinar si dos cadenas son equivalentes."
+                              name="FuzzyComparisonFlagsEx"
+                              typeConverter="tcComparisonFlagsEx">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Inputs[Entrada de búsqueda aproximada].Columns[ingresos]"
+                          cachedDataType="cy"
+                          cachedName="ingresos"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[ingresos]">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Nombre de la columna de tabla de referencia con la que debe coincidir la columna de entrada."
+                              name="JoinToReferenceColumn"
+                              state="escaped" />
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la coincidencia es aproximada o exacta."
+                              name="JoinType"
+                              typeConverter="tcJoinType">2</property>
+                            <property
+                              dataType="System.Single"
+                              description="Especifica la similitud textual mínima necesaria entre la entrada y los registros de coincidencia aproximada en los valores de esta columna de combinación en particular. Debe ser un valor de coma flotante entre 0,0 y 1,0."
+                              name="MinSimilarity">0</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Especifica las opciones de comparación para datos de caracteres. Las opciones son las admitidas por la función FoldString."
+                              name="FuzzyComparisonFlags"
+                              typeConverter="tcComparisonFlags">1</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Marcadores de FoldString que se deben usar para determinar si dos cadenas son equivalentes."
+                              name="FuzzyComparisonFlagsEx"
+                              typeConverter="tcComparisonFlagsEx">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Inputs[Entrada de búsqueda aproximada].Columns[PromVisit]"
+                          cachedDataType="decimal"
+                          cachedName="PromVisit"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[PromVisit]">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Nombre de la columna de tabla de referencia con la que debe coincidir la columna de entrada."
+                              name="JoinToReferenceColumn"
+                              state="escaped" />
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la coincidencia es aproximada o exacta."
+                              name="JoinType"
+                              typeConverter="tcJoinType">2</property>
+                            <property
+                              dataType="System.Single"
+                              description="Especifica la similitud textual mínima necesaria entre la entrada y los registros de coincidencia aproximada en los valores de esta columna de combinación en particular. Debe ser un valor de coma flotante entre 0,0 y 1,0."
+                              name="MinSimilarity">0</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Especifica las opciones de comparación para datos de caracteres. Las opciones son las admitidas por la función FoldString."
+                              name="FuzzyComparisonFlags"
+                              typeConverter="tcComparisonFlags">1</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Marcadores de FoldString que se deben usar para determinar si dos cadenas son equivalentes."
+                              name="FuzzyComparisonFlagsEx"
+                              typeConverter="tcComparisonFlagsEx">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Inputs[Entrada de búsqueda aproximada].Columns[Edad]"
+                          cachedDataType="ui4"
+                          cachedName="Edad"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Edad]">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Nombre de la columna de tabla de referencia con la que debe coincidir la columna de entrada."
+                              name="JoinToReferenceColumn"
+                              state="escaped" />
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la coincidencia es aproximada o exacta."
+                              name="JoinType"
+                              typeConverter="tcJoinType">2</property>
+                            <property
+                              dataType="System.Single"
+                              description="Especifica la similitud textual mínima necesaria entre la entrada y los registros de coincidencia aproximada en los valores de esta columna de combinación en particular. Debe ser un valor de coma flotante entre 0,0 y 1,0."
+                              name="MinSimilarity">0</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Especifica las opciones de comparación para datos de caracteres. Las opciones son las admitidas por la función FoldString."
+                              name="FuzzyComparisonFlags"
+                              typeConverter="tcComparisonFlags">1</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Marcadores de FoldString que se deben usar para determinar si dos cadenas son equivalentes."
+                              name="FuzzyComparisonFlagsEx"
+                              typeConverter="tcComparisonFlagsEx">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Inputs[Entrada de búsqueda aproximada].Columns[Sauna]"
+                          cachedDataType="bool"
+                          cachedName="Sauna"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Sauna]">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Nombre de la columna de tabla de referencia con la que debe coincidir la columna de entrada."
+                              name="JoinToReferenceColumn"
+                              state="escaped" />
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la coincidencia es aproximada o exacta."
+                              name="JoinType"
+                              typeConverter="tcJoinType">2</property>
+                            <property
+                              dataType="System.Single"
+                              description="Especifica la similitud textual mínima necesaria entre la entrada y los registros de coincidencia aproximada en los valores de esta columna de combinación en particular. Debe ser un valor de coma flotante entre 0,0 y 1,0."
+                              name="MinSimilarity">0</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Especifica las opciones de comparación para datos de caracteres. Las opciones son las admitidas por la función FoldString."
+                              name="FuzzyComparisonFlags"
+                              typeConverter="tcComparisonFlags">1</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Marcadores de FoldString que se deben usar para determinar si dos cadenas son equivalentes."
+                              name="FuzzyComparisonFlagsEx"
+                              typeConverter="tcComparisonFlagsEx">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Inputs[Entrada de búsqueda aproximada].Columns[Masaje]"
+                          cachedDataType="bool"
+                          cachedName="Masaje"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Masaje]">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Nombre de la columna de tabla de referencia con la que debe coincidir la columna de entrada."
+                              name="JoinToReferenceColumn"
+                              state="escaped" />
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la coincidencia es aproximada o exacta."
+                              name="JoinType"
+                              typeConverter="tcJoinType">2</property>
+                            <property
+                              dataType="System.Single"
+                              description="Especifica la similitud textual mínima necesaria entre la entrada y los registros de coincidencia aproximada en los valores de esta columna de combinación en particular. Debe ser un valor de coma flotante entre 0,0 y 1,0."
+                              name="MinSimilarity">0</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Especifica las opciones de comparación para datos de caracteres. Las opciones son las admitidas por la función FoldString."
+                              name="FuzzyComparisonFlags"
+                              typeConverter="tcComparisonFlags">1</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Marcadores de FoldString que se deben usar para determinar si dos cadenas son equivalentes."
+                              name="FuzzyComparisonFlagsEx"
+                              typeConverter="tcComparisonFlagsEx">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Inputs[Entrada de búsqueda aproximada].Columns[Hidro]"
+                          cachedDataType="bool"
+                          cachedName="Hidro"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Hidro]">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Nombre de la columna de tabla de referencia con la que debe coincidir la columna de entrada."
+                              name="JoinToReferenceColumn"
+                              state="escaped" />
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la coincidencia es aproximada o exacta."
+                              name="JoinType"
+                              typeConverter="tcJoinType">2</property>
+                            <property
+                              dataType="System.Single"
+                              description="Especifica la similitud textual mínima necesaria entre la entrada y los registros de coincidencia aproximada en los valores de esta columna de combinación en particular. Debe ser un valor de coma flotante entre 0,0 y 1,0."
+                              name="MinSimilarity">0</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Especifica las opciones de comparación para datos de caracteres. Las opciones son las admitidas por la función FoldString."
+                              name="FuzzyComparisonFlags"
+                              typeConverter="tcComparisonFlags">1</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Marcadores de FoldString que se deben usar para determinar si dos cadenas son equivalentes."
+                              name="FuzzyComparisonFlagsEx"
+                              typeConverter="tcComparisonFlagsEx">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Inputs[Entrada de búsqueda aproximada].Columns[ArchivoSucursal]"
+                          cachedDataType="wstr"
+                          cachedLength="100"
+                          cachedName="ArchivoSucursal"
+                          cachedSortKeyPosition="1"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[ArchivoSucursal]">
+                          <properties>
+                            <property
+                              dataType="System.String"
+                              description="Nombre de la columna de tabla de referencia con la que debe coincidir la columna de entrada."
+                              name="JoinToReferenceColumn"
+                              state="escaped">nombre_archivo</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la coincidencia es aproximada o exacta."
+                              name="JoinType"
+                              typeConverter="tcJoinType">2</property>
+                            <property
+                              dataType="System.Single"
+                              description="Especifica la similitud textual mínima necesaria entre la entrada y los registros de coincidencia aproximada en los valores de esta columna de combinación en particular. Debe ser un valor de coma flotante entre 0,0 y 1,0."
+                              name="MinSimilarity">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica las opciones de comparación para datos de caracteres. Las opciones son las admitidas por la función FoldString."
+                              name="FuzzyComparisonFlags"
+                              typeConverter="tcComparisonFlags">1</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Marcadores de FoldString que se deben usar para determinar si dos cadenas son equivalentes."
+                              name="FuzzyComparisonFlagsEx"
+                              typeConverter="tcComparisonFlagsEx">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Inputs[Entrada de búsqueda aproximada].Columns[Yoga]"
+                          cachedDataType="bool"
+                          cachedName="Yoga"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Yoga]">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Nombre de la columna de tabla de referencia con la que debe coincidir la columna de entrada."
+                              name="JoinToReferenceColumn"
+                              state="escaped" />
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la coincidencia es aproximada o exacta."
+                              name="JoinType"
+                              typeConverter="tcJoinType">2</property>
+                            <property
+                              dataType="System.Single"
+                              description="Especifica la similitud textual mínima necesaria entre la entrada y los registros de coincidencia aproximada en los valores de esta columna de combinación en particular. Debe ser un valor de coma flotante entre 0,0 y 1,0."
+                              name="MinSimilarity">0</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Especifica las opciones de comparación para datos de caracteres. Las opciones son las admitidas por la función FoldString."
+                              name="FuzzyComparisonFlags"
+                              typeConverter="tcComparisonFlags">1</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Marcadores de FoldString que se deben usar para determinar si dos cadenas son equivalentes."
+                              name="FuzzyComparisonFlagsEx"
+                              typeConverter="tcComparisonFlagsEx">0</property>
+                          </properties>
+                        </inputColumn>
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada]"
+                      name="Salida de búsqueda aproximada">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[id]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[id]"
+                          name="id">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Especifica la columna de tabla de referencia que se copia a la salida para cada resultado de coincidencia."
+                              name="CopyFromReferenceColumn"
+                              state="escaped" />
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica el identificador de linaje de la columna de entrada desde la que copiar a esta columna de salida para cada coincidencia."
+                              name="SourceInputColumnLineageID">#{Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[id]}</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la columna se usa para indicar confianza o similitud."
+                              name="ColumnType"
+                              typeConverter="tcColumnType">0</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[Sexo]"
+                          dataType="bool"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[Sexo]"
+                          name="Sexo">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Especifica la columna de tabla de referencia que se copia a la salida para cada resultado de coincidencia."
+                              name="CopyFromReferenceColumn"
+                              state="escaped" />
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica el identificador de linaje de la columna de entrada desde la que copiar a esta columna de salida para cada coincidencia."
+                              name="SourceInputColumnLineageID">#{Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Sexo]}</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la columna se usa para indicar confianza o similitud."
+                              name="ColumnType"
+                              typeConverter="tcColumnType">0</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[ingresos]"
+                          dataType="cy"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[ingresos]"
+                          name="ingresos">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Especifica la columna de tabla de referencia que se copia a la salida para cada resultado de coincidencia."
+                              name="CopyFromReferenceColumn"
+                              state="escaped" />
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica el identificador de linaje de la columna de entrada desde la que copiar a esta columna de salida para cada coincidencia."
+                              name="SourceInputColumnLineageID">#{Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[ingresos]}</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la columna se usa para indicar confianza o similitud."
+                              name="ColumnType"
+                              typeConverter="tcColumnType">0</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[PromVisit]"
+                          dataType="decimal"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[PromVisit]"
+                          name="PromVisit">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Especifica la columna de tabla de referencia que se copia a la salida para cada resultado de coincidencia."
+                              name="CopyFromReferenceColumn"
+                              state="escaped" />
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica el identificador de linaje de la columna de entrada desde la que copiar a esta columna de salida para cada coincidencia."
+                              name="SourceInputColumnLineageID">#{Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[PromVisit]}</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la columna se usa para indicar confianza o similitud."
+                              name="ColumnType"
+                              typeConverter="tcColumnType">0</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[Edad]"
+                          dataType="ui4"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[Edad]"
+                          name="Edad">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Especifica la columna de tabla de referencia que se copia a la salida para cada resultado de coincidencia."
+                              name="CopyFromReferenceColumn"
+                              state="escaped" />
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica el identificador de linaje de la columna de entrada desde la que copiar a esta columna de salida para cada coincidencia."
+                              name="SourceInputColumnLineageID">#{Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Edad]}</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la columna se usa para indicar confianza o similitud."
+                              name="ColumnType"
+                              typeConverter="tcColumnType">0</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[Sauna]"
+                          dataType="bool"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[Sauna]"
+                          name="Sauna">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Especifica la columna de tabla de referencia que se copia a la salida para cada resultado de coincidencia."
+                              name="CopyFromReferenceColumn"
+                              state="escaped" />
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica el identificador de linaje de la columna de entrada desde la que copiar a esta columna de salida para cada coincidencia."
+                              name="SourceInputColumnLineageID">#{Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Sauna]}</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la columna se usa para indicar confianza o similitud."
+                              name="ColumnType"
+                              typeConverter="tcColumnType">0</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[Masaje]"
+                          dataType="bool"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[Masaje]"
+                          name="Masaje">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Especifica la columna de tabla de referencia que se copia a la salida para cada resultado de coincidencia."
+                              name="CopyFromReferenceColumn"
+                              state="escaped" />
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica el identificador de linaje de la columna de entrada desde la que copiar a esta columna de salida para cada coincidencia."
+                              name="SourceInputColumnLineageID">#{Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Masaje]}</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la columna se usa para indicar confianza o similitud."
+                              name="ColumnType"
+                              typeConverter="tcColumnType">0</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[Hidro]"
+                          dataType="bool"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[Hidro]"
+                          name="Hidro">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Especifica la columna de tabla de referencia que se copia a la salida para cada resultado de coincidencia."
+                              name="CopyFromReferenceColumn"
+                              state="escaped" />
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica el identificador de linaje de la columna de entrada desde la que copiar a esta columna de salida para cada coincidencia."
+                              name="SourceInputColumnLineageID">#{Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Hidro]}</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la columna se usa para indicar confianza o similitud."
+                              name="ColumnType"
+                              typeConverter="tcColumnType">0</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[Yoga]"
+                          dataType="bool"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[Yoga]"
+                          name="Yoga">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Especifica la columna de tabla de referencia que se copia a la salida para cada resultado de coincidencia."
+                              name="CopyFromReferenceColumn"
+                              state="escaped" />
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica el identificador de linaje de la columna de entrada desde la que copiar a esta columna de salida para cada coincidencia."
+                              name="SourceInputColumnLineageID">#{Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Yoga]}</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la columna se usa para indicar confianza o similitud."
+                              name="ColumnType"
+                              typeConverter="tcColumnType">0</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[ArchivoSucursal]"
+                          dataType="wstr"
+                          length="100"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[ArchivoSucursal]"
+                          name="ArchivoSucursal">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Especifica la columna de tabla de referencia que se copia a la salida para cada resultado de coincidencia."
+                              name="CopyFromReferenceColumn"
+                              state="escaped" />
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica el identificador de linaje de la columna de entrada desde la que copiar a esta columna de salida para cada coincidencia."
+                              name="SourceInputColumnLineageID">#{Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[ArchivoSucursal]}</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la columna se usa para indicar confianza o similitud."
+                              name="ColumnType"
+                              typeConverter="tcColumnType">0</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[fk_sucursal_id]"
+                          dataType="i4"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[fk_sucursal_id]"
+                          name="fk_sucursal_id">
+                          <properties>
+                            <property
+                              dataType="System.String"
+                              description="Especifica la columna de tabla de referencia que se copia a la salida para cada resultado de coincidencia."
+                              name="CopyFromReferenceColumn"
+                              state="escaped">id</property>
+                            <property
+                              containsID="true"
+                              dataType="System.Null"
+                              description="Especifica el identificador de linaje de la columna de entrada desde la que copiar a esta columna de salida para cada coincidencia."
+                              name="SourceInputColumnLineageID" />
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la columna se usa para indicar confianza o similitud."
+                              name="ColumnType"
+                              typeConverter="tcColumnType">0</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[_Similarity]"
+                          dataType="r4"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[_Similarity]"
+                          name="_Similarity">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la columna se usa para indicar confianza o similitud."
+                              name="ColumnType"
+                              typeConverter="tcColumnType">1</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[_Confidence]"
+                          dataType="r4"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[_Confidence]"
+                          name="_Confidence">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la columna se usa para indicar confianza o similitud."
+                              name="ColumnType"
+                              typeConverter="tcColumnType">2</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[_Similarity_ArchivoSucursal]"
+                          dataType="r4"
+                          description="Puntuación de similitud en el nivel de columna para la combinación parcial en la columna 'ArchivoSucursal'."
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[_Similarity_ArchivoSucursal]"
+                          name="_Similarity_ArchivoSucursal">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Especifica la columna de tabla de referencia que se copia a la salida para cada resultado de coincidencia."
+                              name="CopyFromReferenceColumn"
+                              state="escaped" />
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica el identificador de linaje de la columna de entrada desde la que copiar a esta columna de salida para cada coincidencia."
+                              name="SourceInputColumnLineageID">#{Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[ArchivoSucursal]}</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica si la columna se usa para indicar confianza o similitud."
+                              name="ColumnType"
+                              typeConverter="tcColumnType">3</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Columna derivada"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Columna derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+                  description="Crea nuevos valores de columna aplicando expresiones a las columnas de entrada de la transformación. Crea nuevas columnas o sobrescribe las columnas existentes. Por ejemplo, se concatenan los valores de las columnas 'nombre' y 'apellidos' para crear una columna 'nombre completo'."
+                  name="Columna derivada"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Columna derivada.Inputs[Entrada de columna derivada]"
+                      description="Entrada en la transformación Columna derivada"
+                      name="Entrada de columna derivada">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Columna derivada.Outputs[Salida de columna derivada]"
+                      description="Salida predeterminada de la transformación Columna derivada"
+                      exclusionGroup="1"
+                      name="Salida de columna derivada"
+                      synchronousInputId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Columna derivada.Inputs[Entrada de columna derivada]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Columna derivada.Outputs[Salida de columna derivada].Columns[ArchivoSucursal]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Cálculo"
+                          errorRowDisposition="FailComponent"
+                          length="100"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Columna derivada.Outputs[Salida de columna derivada].Columns[ArchivoSucursal]"
+                          name="ArchivoSucursal"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Expresión de columna derivada"
+                              name="Expression">@[User::originName]</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Expresión descriptiva de columna derivada"
+                              expressionType="Notify"
+                              name="FriendlyExpression">@[User::originName]</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Columna derivada.Outputs[Salida de error de columna derivada]"
+                      description="Salida de error de la transformación Columna derivada"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Salida de error de columna derivada"
+                      synchronousInputId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Columna derivada.Inputs[Entrada de columna derivada]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB"
                   componentClassID="Microsoft.OLEDBDestination"
                   contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
                   description="Destino de OLE DB"
-                  name="Destino SQL Server"
+                  name="Destino de OLE DB"
                   usesDispositions="true"
                   version="4">
                   <properties>
@@ -218,7 +1012,7 @@
                       dataType="System.Int32"
                       description="Especifica el modo utilizado para obtener acceso a la base de datos."
                       name="AccessMode"
-                      typeConverter="AccessMode">0</property>
+                      typeConverter="AccessMode">3</property>
                     <property
                       dataType="System.Boolean"
                       description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
@@ -230,7 +1024,7 @@
                     <property
                       dataType="System.String"
                       description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
-                      name="FastLoadOptions"></property>
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
                     <property
                       dataType="System.Int32"
                       description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
@@ -238,7 +1032,7 @@
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Connections[OleDbConnection]"
+                      refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Connections[OleDbConnection]"
                       connectionManagerID="Package.ConnectionManagers[DESKTOP-LD3OAU2.db_diego_spa.sa]"
                       connectionManagerRefId="Package.ConnectionManagers[DESKTOP-LD3OAU2.db_diego_spa.sa]"
                       description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
@@ -246,132 +1040,142 @@
                   </connections>
                   <inputs>
                     <input
-                      refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB]"
+                      refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
                       errorOrTruncationOperation="Insertar"
                       errorRowDisposition="FailComponent"
                       hasSideEffects="true"
                       name="Entrada de destino de OLE DB">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].Columns[id]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[id]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="id"
-                          externalMetadataColumnId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].ExternalColumns[id]"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[id]" />
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[id]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[id]" />
                         <inputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].Columns[Sexo]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Sexo]"
                           cachedDataType="bool"
                           cachedName="Sexo"
-                          externalMetadataColumnId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].ExternalColumns[sexo]"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[Sexo]" />
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[sexo]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[Sexo]" />
                         <inputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].Columns[ingresos]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[ingresos]"
                           cachedDataType="cy"
                           cachedName="ingresos"
-                          externalMetadataColumnId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].ExternalColumns[ingresos]"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[ingresos]" />
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ingresos]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[ingresos]" />
                         <inputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].Columns[Edad]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Edad]"
                           cachedDataType="ui4"
                           cachedName="Edad"
-                          externalMetadataColumnId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].ExternalColumns[edad]"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[Edad]" />
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edad]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[Edad]" />
                         <inputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].Columns[Sauna]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Sauna]"
                           cachedDataType="bool"
                           cachedName="Sauna"
-                          externalMetadataColumnId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].ExternalColumns[sauna]"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[Sauna]" />
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[sauna]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[Sauna]" />
                         <inputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].Columns[Masaje]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Masaje]"
                           cachedDataType="bool"
                           cachedName="Masaje"
-                          externalMetadataColumnId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].ExternalColumns[masaje]"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[Masaje]" />
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[masaje]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[Masaje]" />
                         <inputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].Columns[Hidro]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Hidro]"
                           cachedDataType="bool"
                           cachedName="Hidro"
-                          externalMetadataColumnId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].ExternalColumns[hidro]"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[Hidro]" />
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[hidro]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[Hidro]" />
                         <inputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].Columns[Yoga]"
-                          cachedDataType="bool"
-                          cachedName="Yoga"
-                          externalMetadataColumnId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].ExternalColumns[yoga]"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[Yoga]" />
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[fk_sucursal_id]"
+                          cachedDataType="i4"
+                          cachedName="fk_sucursal_id"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[fk_sucursal_id]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[fk_sucursal_id]" />
                         <inputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].Columns[PromVisit]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[PromVisit]"
                           cachedDataType="decimal"
                           cachedName="PromVisit"
-                          externalMetadataColumnId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].ExternalColumns[promedio_visitas]"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[PromVisit]" />
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[promedio_visitas]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[PromVisit]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Yoga]"
+                          cachedDataType="bool"
+                          cachedName="Yoga"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[yoga]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada].Columns[Yoga]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].ExternalColumns[id]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[id]"
                           codePage="1252"
                           dataType="str"
                           length="100"
                           name="id" />
                         <externalMetadataColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].ExternalColumns[sexo]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[sexo]"
                           dataType="bool"
                           name="sexo" />
                         <externalMetadataColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].ExternalColumns[ingresos]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ingresos]"
                           dataType="cy"
                           name="ingresos" />
                         <externalMetadataColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].ExternalColumns[promedio_visitas]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[promedio_visitas]"
                           dataType="numeric"
                           name="promedio_visitas"
                           precision="18"
                           scale="3" />
                         <externalMetadataColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].ExternalColumns[edad]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edad]"
                           dataType="i4"
                           name="edad" />
                         <externalMetadataColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].ExternalColumns[sauna]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[sauna]"
                           dataType="bool"
                           name="sauna" />
                         <externalMetadataColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].ExternalColumns[masaje]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[masaje]"
                           dataType="bool"
                           name="masaje" />
                         <externalMetadataColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].ExternalColumns[hidro]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[hidro]"
                           dataType="bool"
                           name="hidro" />
                         <externalMetadataColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB].ExternalColumns[yoga]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[yoga]"
                           dataType="bool"
                           name="yoga" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[fk_sucursal_id]"
+                          dataType="i4"
+                          name="fk_sucursal_id" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
                   <outputs>
                     <output
-                      refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Outputs[Salida de error de destino de OLE DB]"
+                      refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
                       exclusionGroup="1"
                       isErrorOut="true"
                       name="Salida de error de destino de OLE DB"
-                      synchronousInputId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB]">
+                      synchronousInputId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -380,12 +1184,347 @@
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV"
+                  refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar"
+                  componentClassID="Microsoft.Sort"
+                  contactInfo="Ordenar;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+                  description="Ordena los datos de entrada de manera ascendente o descendente cuando no es posible ordenarlos en su origen. Por ejemplo, se ordenan los datos de ventas por 'id. de cliente' antes de que se escriban en un archivo plano y se entreguen a otro departamento. Nota: no se recomienda realizar esta transformación para grandes flujos de datos."
+                  name="Ordenar"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indica si la transformación Ordenar quita filas con valores de ordenación duplicados."
+                      name="EliminateDuplicates">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica el número máximo de subprocesos que se deben usar para la ordenación."
+                      expressionType="Notify"
+                      name="MaximumThreads">-1</property>
+                  </properties>
+                  <inputs>
+                    <input
+                      refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Inputs[Entrada de ordenación]"
+                      name="Entrada de ordenación">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Inputs[Entrada de ordenación].Columns[id]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="id"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[id]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica las opciones de comparación para datos de caracteres."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica el criterio de ordenación de la columna."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Inputs[Entrada de ordenación].Columns[Sexo]"
+                          cachedDataType="bool"
+                          cachedName="Sexo"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Sexo]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica las opciones de comparación para datos de caracteres."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica el criterio de ordenación de la columna."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Inputs[Entrada de ordenación].Columns[ingresos]"
+                          cachedDataType="cy"
+                          cachedName="ingresos"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[ingresos]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica las opciones de comparación para datos de caracteres."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica el criterio de ordenación de la columna."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Inputs[Entrada de ordenación].Columns[PromVisit]"
+                          cachedDataType="decimal"
+                          cachedName="PromVisit"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[PromVisit]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica las opciones de comparación para datos de caracteres."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica el criterio de ordenación de la columna."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Inputs[Entrada de ordenación].Columns[Edad]"
+                          cachedDataType="ui4"
+                          cachedName="Edad"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Edad]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica las opciones de comparación para datos de caracteres."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica el criterio de ordenación de la columna."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Inputs[Entrada de ordenación].Columns[Sauna]"
+                          cachedDataType="bool"
+                          cachedName="Sauna"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Sauna]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica las opciones de comparación para datos de caracteres."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica el criterio de ordenación de la columna."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Inputs[Entrada de ordenación].Columns[Masaje]"
+                          cachedDataType="bool"
+                          cachedName="Masaje"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Masaje]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica las opciones de comparación para datos de caracteres."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica el criterio de ordenación de la columna."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Inputs[Entrada de ordenación].Columns[Hidro]"
+                          cachedDataType="bool"
+                          cachedName="Hidro"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Hidro]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica las opciones de comparación para datos de caracteres."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica el criterio de ordenación de la columna."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Inputs[Entrada de ordenación].Columns[Yoga]"
+                          cachedDataType="bool"
+                          cachedName="Yoga"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Yoga]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica las opciones de comparación para datos de caracteres."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica el criterio de ordenación de la columna."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Inputs[Entrada de ordenación].Columns[ArchivoSucursal]"
+                          cachedDataType="wstr"
+                          cachedLength="100"
+                          cachedName="ArchivoSucursal"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Columna derivada.Outputs[Salida de columna derivada].Columns[ArchivoSucursal]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica las opciones de comparación para datos de caracteres."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica el criterio de ordenación de la columna."
+                              name="NewSortKeyPosition">1</property>
+                          </properties>
+                        </inputColumn>
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación]"
+                      isSorted="true"
+                      name="Salida de ordenación">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[id]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[id]"
+                          name="id">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                              name="SortColumnId">#{Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[id]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Sexo]"
+                          dataType="bool"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Sexo]"
+                          name="Sexo">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                              name="SortColumnId">#{Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Sexo]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[ingresos]"
+                          dataType="cy"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[ingresos]"
+                          name="ingresos">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                              name="SortColumnId">#{Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[ingresos]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[PromVisit]"
+                          dataType="decimal"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[PromVisit]"
+                          name="PromVisit">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                              name="SortColumnId">#{Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[PromVisit]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Edad]"
+                          dataType="ui4"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Edad]"
+                          name="Edad">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                              name="SortColumnId">#{Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Edad]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Sauna]"
+                          dataType="bool"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Sauna]"
+                          name="Sauna">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                              name="SortColumnId">#{Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Sauna]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Masaje]"
+                          dataType="bool"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Masaje]"
+                          name="Masaje">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                              name="SortColumnId">#{Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Masaje]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Hidro]"
+                          dataType="bool"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Hidro]"
+                          name="Hidro">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                              name="SortColumnId">#{Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Hidro]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Yoga]"
+                          dataType="bool"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[Yoga]"
+                          name="Yoga">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                              name="SortColumnId">#{Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Yoga]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[ArchivoSucursal]"
+                          dataType="wstr"
+                          length="100"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación].Columns[ArchivoSucursal]"
+                          name="ArchivoSucursal"
+                          sortKeyPosition="1">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                              name="SortColumnId">#{Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Columna derivada.Outputs[Salida de columna derivada].Columns[ArchivoSucursal]}</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV"
                   componentClassID="Microsoft.FlatFileSource"
                   contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
                   description="Origen de archivo plano"
                   localeId="17418"
-                  name="Origen de archivos CSV"
+                  name="Origen CSV"
                   usesDispositions="true"
                   version="1">
                   <properties>
@@ -400,25 +1539,25 @@
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Connections[FlatFileConnection]"
-                      connectionManagerID="Package.ConnectionManagers[Source Files]"
-                      connectionManagerRefId="Package.ConnectionManagers[Source Files]"
+                      refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Source CSV]"
+                      connectionManagerRefId="Package.ConnectionManagers[Source CSV]"
                       name="FlatFileConnection" />
                   </connections>
                   <outputs>
                     <output
-                      refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano]"
+                      refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano]"
                       name="Salida de origen de archivo plano">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[id]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[id]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[id]"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[id]"
                           length="50"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[id]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[id]"
                           name="id"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -433,12 +1572,12 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[Sexo]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Sexo]"
                           dataType="bool"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Sexo]"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[Sexo]"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Sexo]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Sexo]"
                           name="Sexo"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -453,12 +1592,12 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[ingresos]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[ingresos]"
                           dataType="cy"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[ingresos]"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[ingresos]"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[ingresos]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[ingresos]"
                           name="ingresos"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -473,12 +1612,12 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[PromVisit]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[PromVisit]"
                           dataType="decimal"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[PromVisit]"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[PromVisit]"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[PromVisit]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[PromVisit]"
                           name="PromVisit"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -493,12 +1632,12 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[Edad]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Edad]"
                           dataType="ui4"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Edad]"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[Edad]"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Edad]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Edad]"
                           name="Edad"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -513,12 +1652,12 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[Sauna]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Sauna]"
                           dataType="bool"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Sauna]"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[Sauna]"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Sauna]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Sauna]"
                           name="Sauna"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -533,12 +1672,12 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[Masaje]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Masaje]"
                           dataType="bool"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Masaje]"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[Masaje]"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Masaje]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Masaje]"
                           name="Masaje"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -553,12 +1692,12 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[Hidro]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Hidro]"
                           dataType="bool"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Hidro]"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[Hidro]"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Hidro]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Hidro]"
                           name="Hidro"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -573,12 +1712,12 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[Yoga]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Yoga]"
                           dataType="bool"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Yoga]"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].Columns[Yoga]"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Yoga]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].Columns[Yoga]"
                           name="Yoga"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -596,66 +1735,66 @@
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[id]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[id]"
                           dataType="wstr"
                           length="100"
                           name="id" />
                         <externalMetadataColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Sexo]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Sexo]"
                           dataType="bool"
                           name="Sexo" />
                         <externalMetadataColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[ingresos]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[ingresos]"
                           dataType="cy"
                           name="ingresos" />
                         <externalMetadataColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[PromVisit]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[PromVisit]"
                           dataType="decimal"
                           name="PromVisit" />
                         <externalMetadataColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Edad]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Edad]"
                           dataType="ui4"
                           name="Edad" />
                         <externalMetadataColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Sauna]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Sauna]"
                           dataType="bool"
                           name="Sauna" />
                         <externalMetadataColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Masaje]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Masaje]"
                           dataType="bool"
                           name="Masaje" />
                         <externalMetadataColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Hidro]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Hidro]"
                           dataType="bool"
                           name="Hidro" />
                         <externalMetadataColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Yoga]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano].ExternalColumns[Yoga]"
                           dataType="bool"
                           name="Yoga" />
                       </externalMetadataColumns>
                     </output>
                     <output
-                      refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de error de origen de archivo plano]"
+                      refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de error de origen de archivo plano]"
                       isErrorOut="true"
                       name="Salida de error de origen de archivo plano">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
                           codePage="1252"
                           dataType="text"
                           description="Columna de salida de error de origen de archivo plano"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
                           name="Columna de salida de error de origen de archivo plano" />
                         <outputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                          refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                          lineageId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -666,10 +1805,25 @@
               </components>
               <paths>
                 <path
-                  refId="Package\Leer cada CSV\CSV hacia SQL Server.Paths[Salida de origen de archivo plano]"
-                  endId="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server.Inputs[Entrada de destino de OLE DB]"
+                  refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server.Paths[Salida de búsqueda aproximada]"
+                  endId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                  name="Salida de búsqueda aproximada"
+                  startId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Outputs[Salida de búsqueda aproximada]" />
+                <path
+                  refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server.Paths[Salida de columna derivada]"
+                  endId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Inputs[Entrada de ordenación]"
+                  name="Salida de columna derivada"
+                  startId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Columna derivada.Outputs[Salida de columna derivada]" />
+                <path
+                  refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server.Paths[Salida de ordenación]"
+                  endId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada.Inputs[Entrada de búsqueda aproximada]"
+                  name="Salida de ordenación"
+                  startId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar.Outputs[Salida de ordenación]" />
+                <path
+                  refId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server.Paths[Salida de origen de archivo plano]"
+                  endId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Columna derivada.Inputs[Entrada de columna derivada]"
                   name="Salida de origen de archivo plano"
-                  startId="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV.Outputs[Salida de origen de archivo plano]" />
+                  startId="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV.Outputs[Salida de origen de archivo plano]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
@@ -678,10 +1832,10 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{A52234C2-CE7E-471C-AC2A-5A4397CEBACF}"
-          DTS:ObjectName="{A52234C2-CE7E-471C-AC2A-5A4397CEBACF}"
+          DTS:DTSID="{F8EB3897-0F32-4CDB-B22B-F8757DFD586C}"
+          DTS:ObjectName="{F8EB3897-0F32-4CDB-B22B-F8757DFD586C}"
           DTS:ValueIndex="0"
-          DTS:VariableName="User::sourcefiles" />
+          DTS:VariableName="User::originName" />
       </DTS:ForEachVariableMappings>
     </DTS:Executable>
     <DTS:Executable
@@ -697,7 +1851,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{1CB21FAF-E2A7-492B-94E1-0ABEEC1EA915}"
+          SQLTask:Connection="{974CCFEE-FAD4-4CD6-9D4C-5538B4FEB001}"
           SQLTask:BypassPrepare="False"
           SQLTask:SqlStatementSource="TRUNCATE TABLE visita;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
@@ -893,6 +2047,10 @@
                       refId="Package\Mover data a historico\Destino Tabla Historica.Inputs[Entrada de destino de OLE DB].ExternalColumns[yoga]"
                       dataType="bool"
                       name="yoga" />
+                    <externalMetadataColumn
+                      refId="Package\Mover data a historico\Destino Tabla Historica.Inputs[Entrada de destino de OLE DB].ExternalColumns[fecha_archivado]"
+                      dataType="dbDate"
+                      name="fecha_archivado" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1067,6 +2225,15 @@
                       lineageId="Package\Mover data a historico\Origen Tabla de Visitas.Outputs[Salida de origen de OLE DB].Columns[yoga]"
                       name="yoga"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Mover data a historico\Origen Tabla de Visitas.Outputs[Salida de origen de OLE DB].Columns[fk_sucursal_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Mover data a historico\Origen Tabla de Visitas.Outputs[Salida de origen de OLE DB].ExternalColumns[fk_sucursal_id]"
+                      lineageId="Package\Mover data a historico\Origen Tabla de Visitas.Outputs[Salida de origen de OLE DB].Columns[fk_sucursal_id]"
+                      name="fk_sucursal_id"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1110,6 +2277,10 @@
                       refId="Package\Mover data a historico\Origen Tabla de Visitas.Outputs[Salida de origen de OLE DB].ExternalColumns[yoga]"
                       dataType="bool"
                       name="yoga" />
+                    <externalMetadataColumn
+                      refId="Package\Mover data a historico\Origen Tabla de Visitas.Outputs[Salida de origen de OLE DB].ExternalColumns[fk_sucursal_id]"
+                      dataType="i4"
+                      name="fk_sucursal_id" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -1167,6 +2338,11 @@
                       lineageId="Package\Mover data a historico\Origen Tabla de Visitas.Outputs[Salida de error de origen de OLE DB].Columns[yoga]"
                       name="yoga" />
                     <outputColumn
+                      refId="Package\Mover data a historico\Origen Tabla de Visitas.Outputs[Salida de error de origen de OLE DB].Columns[fk_sucursal_id]"
+                      dataType="i4"
+                      lineageId="Package\Mover data a historico\Origen Tabla de Visitas.Outputs[Salida de error de origen de OLE DB].Columns[fk_sucursal_id]"
+                      name="fk_sucursal_id" />
+                    <outputColumn
                       refId="Package\Mover data a historico\Origen Tabla de Visitas.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
                       lineageId="Package\Mover data a historico\Origen Tabla de Visitas.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
@@ -1207,11 +2383,11 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
       DTS:CreationName=""
-      DTS:DTSID="{01586DCC-14B6-40C5-A1CD-FB9A5403604C}"
+      DTS:DTSID="{6B398B43-1023-4D33-B8AA-7BC7D763347F}"
       DTS:From="Package\Limpiar Tabla Visita"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 1"
-      DTS:To="Package\Leer cada CSV" />
+      DTS:To="Package\Contenedor de bucles Foreach" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
@@ -1227,26 +2403,26 @@
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="180,42"
-          Id="Package\Leer cada CSV\CSV hacia SQL Server"
-          TopLeft="8,11" />
+          Id="Package\Contenedor de bucles Foreach\CSV hacia SQL Server"
+          TopLeft="10.5,22" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="199,66"
-          Size="199,109"
-          Id="Package\Leer cada CSV"
-          TopLeft="462,138" />
-        <NodeLayout
-          Size="192,42"
-          Id="Package\Mover data a historico"
-          TopLeft="166,33" />
+          PanelSize="205,90"
+          Size="205,133"
+          Id="Package\Contenedor de bucles Foreach"
+          TopLeft="300,101" />
         <NodeLayout
           Size="176,42"
           Id="Package\Limpiar Tabla Visita"
-          TopLeft="174,168" />
+          TopLeft="36,149" />
+        <NodeLayout
+          Size="192,42"
+          Id="Package\Mover data a historico"
+          TopLeft="28,14" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="262,75">
+          TopLeft="124,56">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1268,18 +2444,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="350,190.75">
+          TopLeft="212,168.75">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="112,0"
+              EndConnector="88,0"
               Start="0,0"
-              End="104.5,0">
+              End="80.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="104.5,0" />
+                    End="80.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1292,32 +2468,110 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Leer cada CSV\CSV hacia SQL Server">
+    design-time-name="Package\Contenedor de bucles Foreach\CSV hacia SQL Server">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="197,42"
-          Id="Package\Leer cada CSV\CSV hacia SQL Server\Origen de archivos CSV"
-          TopLeft="448,94" />
+          Size="138,42"
+          Id="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Origen CSV"
+          TopLeft="42.555555555556,16.7777777777778" />
         <NodeLayout
-          Size="177,42"
-          Id="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server"
-          TopLeft="456,203" />
+          Size="119,42"
+          Id="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Ordenar"
+          TopLeft="52,193.111111111111" />
+        <NodeLayout
+          Size="189,42"
+          Id="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada"
+          TopLeft="235.333333333333,193.111111111111" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Columna derivada"
+          TopLeft="29.7777777777778,100.888888888889" />
         <EdgeLayout
-          Id="Package\Leer cada CSV\CSV hacia SQL Server.Paths[Salida de origen de archivo plano]"
-          TopLeft="545.5,136">
+          Id="Package\Contenedor de bucles Foreach\CSV hacia SQL Server.Paths[Salida de ordenación]"
+          TopLeft="171,214.111111111111">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,67"
+              EndConnector="64.3333333333334,0"
               Start="0,0"
-              End="0,59.5">
+              End="56.8333333333334,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,59.5" />
+                    End="56.8333333333334,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Contenedor de bucles Foreach\CSV hacia SQL Server.Paths[Salida de columna derivada]"
+          TopLeft="112.638888888889,142.888888888889">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50.2222222222222"
+              Start="0,0"
+              End="0,42.7222222222222">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.7222222222222" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="175,42"
+          Id="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB"
+          TopLeft="479,192" />
+        <EdgeLayout
+          Id="Package\Contenedor de bucles Foreach\CSV hacia SQL Server.Paths[Salida de búsqueda aproximada]"
+          TopLeft="424.333333333333,213.555555555555">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="54.666666666667,0"
+              Start="0,0"
+              End="47.166666666667,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="47.166666666667,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Contenedor de bucles Foreach\CSV hacia SQL Server.Paths[Salida de origen de archivo plano]"
+          TopLeft="112.666666666667,58.7777777777778">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42.1111111111112"
+              Start="0,0"
+              End="0,34.6111111111112">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.6111111111112" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1330,7 +2584,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Leer cada CSV\CSV hacia SQL Server\Destino SQL Server">
+    design-time-name="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Búsqueda aproximada">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1381,6 +2635,19 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
+    design-time-name="Package\Mover data a historico\Destino Tabla Historica">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Mover data a historico\Origen Tabla de Visitas">
     <Properties>
       <Property>
@@ -1394,7 +2661,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Mover data a historico\Destino Tabla Historica">
+    design-time-name="Package\Contenedor de bucles Foreach\CSV hacia SQL Server\Destino de OLE DB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
